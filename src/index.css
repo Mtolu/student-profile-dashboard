@@ -1,0 +1,202 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #10b981;
+  --danger-color: #ef4444;
+  --bg-color: #f3f4f6;
+  --card-bg: #f3e7e7;
+  --text-main: #1f2937;
+  --text-muted: #000000;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  color: var(--text-main);
+}
+
+.student-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h2 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* Student Cards container */
+.student-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Student Card */
+.student-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-header h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.favorite-indicator {
+  background: #fef3c7;
+  color: #d97706;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.student-details p {
+  margin: 8px 0;
+  color: var(--text-muted);
+}
+
+.student-details strong {
+  color: var(--text-main);
+}
+
+/* Experience Level Labels */
+.show-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.beginner-level { 
+  background-color: #fee2e2; 
+  color: #dc2626; 
+}
+
+.intermediate-level { 
+  background-color: #e0e7ff; 
+  color: #4f46e5; 
+}
+
+.advanced-level { 
+  background-color: #d1fae5; 
+  color: #059669; 
+}
+
+/* Skill section  */
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+/* Skill Badge  */
+.skill-badge {
+  background-color: #e5e7eb;
+  color: var(--text-main);
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.toggle {
+  background-color: #f3f4f6;
+  color: var(--text-main);
+  margin-right: 10px;
+}
+.toggle:hover {
+  background-color: #e5e7eb; 
+}
+
+.favorite {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+.favorite.active {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.card-button-logic {
+  margin-top: 15px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 15px;
+}
+
+/* Counter  */
+.counter-display-box {
+  background: #f3f3f3;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.counter h4 {
+  margin: 0 0 10px 0;
+  color: var(--text-muted);
+}
+
+.display-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn2 {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+.increase { 
+  background-color: var(--secondary-color); 
+  color: white; 
+}
+.decrease { 
+  background-color: #f59e0b; 
+  color: white; 
+}
+.reset { 
+  background-color: var(--danger-color); 
+  color: white; 
+}
